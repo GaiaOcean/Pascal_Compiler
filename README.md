@@ -98,6 +98,7 @@ Para rodar todos os testes em sequência e verificar os resultados, execute:
 
 ```bash
 chmod +x test.sh
+sed -i 's/\r$//' test.sh
 ./test.sh
 ```
 
@@ -137,7 +138,11 @@ clang pidigits.ll -o pidigits
 
 Abaixo está a comprovação de que o compilador processou os códigos Mini-Pascal com sucesso e gerou os binários com as respostas corretas:
 
-![Evidência dos testes](vou colocar a imagem aqui so um minuto)
+**Com test.sh:**
+![Evidência dos testes com script](runningTestsWithScript.png)
+
+**Manualmente:**
+![Evidência dos testes manuais](runningtests.png)
 
 ---
 
