@@ -1,0 +1,14 @@
+# Executaveis
+compiler
+factor
+fibonacci
+isprime
+pidigits
+
+# Arquivos gerados pelo Flex e Bison
+lex.yy.c
+parser.tab.c
+parser.tab.h
+
+# Arquivos intermediarios do LLVM
+*.ll

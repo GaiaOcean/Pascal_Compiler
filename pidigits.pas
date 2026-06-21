@@ -1,26 +1,22 @@
 program PiDigits;
 begin
     n := ParamStr(1);
+    num := 355;
+    den := 113;
+    cont := 0;
     
-    i := 1;
-    pi := 0;
-    sinal := 1;
-    
-    while i < n + 1 do
+    digito := 0;
+    aux := 0;
+
+    while cont < n do
     begin
-        term := 40000 / (2 * i - 1);
-        if sinal = 1 then
-        begin
-            pi := pi + term;
-            sinal := 0;
-        end
-        else
-        begin
-            pi := pi - term;
-            sinal := 1;
-        end;
-        i := i + 1;
+        digito := num / den;
+        writeln(digito);
+
+        aux := digito * den;
+        num := num - aux;
+        num := num * 10;
+
+        cont := cont + 1;
     end;
-    
-    writeln(pi);
 end.
