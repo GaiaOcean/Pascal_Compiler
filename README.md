@@ -107,25 +107,29 @@ Conforme exigido, aqui estão os comandos para compilar e rodar cada um dos prog
 
 **1. Fibonacci (`fibonacci.pas`):**
 ```bash
-./compiler fibonacci.pas -o fibonacci
+./compiler < fibonacci.pas > fibonacci.ll
+clang fibonacci.ll -o fibonacci
 ./fibonacci 10
 ```
 
 **2. Verificador de Número Primo (`isprime.pas`):**
 ```bash
-./compiler isprime.pas -o isprime
+./compiler < isprime.pas > isprime.ll
+clang isprime.ll -o isprime
 ./isprime 17
 ```
 
 **3. Fatoração (`factor.pas`):**
 ```bash
-./compiler factor.pas -o factor
+./compiler < factor.pas > factor.ll
+clang factor.ll -o factor
 ./factor 84
 ```
 
 **4. Dígitos de Pi (`pidigits.pas`):**
 ```bash
-./compiler pidigits.pas -o pidigits
+./compiler < pidigits.pas > pidigits.ll
+clang pidigits.ll -o pidigits
 ./pidigits 6
 ```
 
