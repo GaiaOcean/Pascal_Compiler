@@ -47,7 +47,7 @@ O repositório inclui os 4 casos de teste práticos exigidos no laboratório, ad
 1. **`fibonacci.pas`**: Calcula o n-ésimo termo da sequência de Fibonacci de maneira iterativa.
 2. **`isprime.pas`**: Algoritmo de verificação de número primo (retorna `1` para primo e `0` para composto).
 3. **`factor.pas`**: Decompõe e imprime, linha por linha, os fatores primos do número fornecido.
-4. **`pidigits.pas`**: Implementação da série de Gregory-Leibniz para aproximar os dígitos de Pi com escala inteira com base nas iterações fornecidas.
+4. **`pidigits.pas`**: Devolve os n primeiros digitos de pi. 
 
 ---
 
